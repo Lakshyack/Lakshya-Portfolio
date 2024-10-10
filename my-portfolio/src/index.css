@@ -1,0 +1,537 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.NavOp {
+  margin-right: 100px;
+}
+
+.ConProfilePic {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 20px;
+  /* box-shadow: 0px 4px 20px -4px rgba(143, 191, 21, 0.783); */
+  padding: 0;
+  top: 15px;
+  /* left: 70px; */
+}
+.ProfilePic {
+  box-shadow: 0px 0px 1px 10px rgba(0, 0, 0, 0.607);
+  margin: 10px 20px 0px 10px;
+  /* padding: 9px; */
+  height: 280px;
+  width: 280px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+.ConProfilePic:hover{
+  box-shadow: 0px 0px 20px 10px rgba(234, 167, 231, 0.881);
+}
+/* .ShortBio {
+background: rgb(241,27,255);
+background: linear-gradient(90deg, rgba(241,27,255,1) 48%, rgba(93,102,255,1) 100%, rgba(0,19,184,1) 100%);
+width: 700px;
+} */
+.HeroSec {
+  position: relative;
+  margin: 5px 0px;
+  padding-bottom: 30px;
+  z-index: 1;
+  display: flex;
+  background: rgb(241, 27, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(241, 27, 255, 1) 48%,
+    rgba(93, 102, 255, 1) 100%,
+    rgba(0, 19, 184, 1) 100%
+  );
+  /* gap: 10px; */
+}
+
+/* .banner-background {
+  clip-path: polygon(0 0, 81% 0, 100% 100%, 0% 100%);
+} */
+.introduction {
+  top: 50px;
+  position: relative;
+  left: 60px;
+  color: rgb(255, 255, 255);
+}
+.introduction > h6,
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
+.introduction > h6 {
+  margin: 0px;
+  padding: 0px;
+}
+.introduction > p {
+  /* margin-top: 5px; */
+  /* width: 3; */
+  margin: 7px 80px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  font-size: 14px;
+}
+.introduction > h6 {
+  font-size: 17px;
+}
+.SocialLinks {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+.ContactMe {
+  margin: 20px 0px;
+}
+.ContactMe > a {
+  background-color: aliceblue;
+  padding: 8px 20px;
+  border-radius: 20px;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.3s ease-in, background-color 0.3s ease-in; /* Combined transitions */
+}
+
+.ContactMe > a:hover {
+  z-index: 3;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px 5px #ff88eb; /* Optional: Change background on hover */
+}
+
+
+
+
+.HeroSecRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ConStandPhoto {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50px;
+  
+    /* padding: 50px 70px; */
+}
+.ConStandPhoto > img {
+  position: relative;
+  border-radius: 30%;
+  margin-bottom: 40px;
+  
+}
+.StandPhoto{
+  margin-left: 0px;
+  z-index: 0;
+  box-shadow: 0px 0px 10px 8px rgb(0, 0, 0);
+  max-width: 400px;
+  max-height: 700px;
+  min-width: 200px;
+  min-height: 330px;
+}
+.StandPhoto:hover{
+  z-index: 10;
+  box-shadow: 0px 0px 30px 28px rgb(0, 0, 0);
+  max-width: 400px;
+  max-height: 700px;
+}
+.AboutMe {
+  color: white;
+  background: #202020;
+  flex-wrap: wrap;
+}
+.AboutSec {
+  /* padding: 10px; */
+  /* margin: 10px; */
+  position: relative;
+  /* left: 22px; */
+  margin-left: 40px;
+  flex: 1 1 50%;
+}
+.AboutSec > h1 {
+  display: flex;
+  margin: 30px 10px;
+  color: pink;
+}
+.ShortNote {
+  margin: 7px 10px 10px 10px;
+  width: 90%;
+}
+.selected-heading {
+  margin: 10px;
+  display: flex;
+  gap: 40px;
+  cursor: pointer;
+}
+/* .selected-heading>h5{
+  margin-right: 10px;
+} */
+.heading1,
+.heading2,
+.heading3 {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */ /* Set the width of the box */
+  padding: 5px;
+  margin: 7px 0px;
+  border-radius: 4px;
+}
+
+#heading1 {
+  height: 5px;
+  width: 40px;
+  border-radius: 5px;
+  animation-name: load;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  background-color: pink;
+  animation-timing-function: ease-in-out;
+  margin: 7px 0px;
+  /* display: none; */
+}
+#heading2 {
+  height: 5px;
+  width: 40px;
+  border-radius: 5px;
+  animation-name: load;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  background-color: pink;
+  animation-timing-function: ease-in-out;
+  display: none;
+  margin: 7px 0px;
+}
+#heading3 {
+  height: 5px;
+  width: 40px;
+  border-radius: 5px;
+  animation-name: load;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  background-color: pink;
+  display: none;
+  animation-timing-function: ease-in-out;
+  margin: 7px 0px;
+}
+
+.heading1:hover,
+.heading2:hover,
+.heading3:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  color: pink;
+}
+
+#heading1:focus,
+#heading1.active,
+#heading2:focus,
+#heading2.active,
+#heading3:focus,
+#heading3.active {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.Content1 {
+  color: pink;
+  margin: 20px 30px 0px 0px;
+  display: block;
+}
+
+.Content2,
+.Content3 {
+  color: pink;
+  margin: 20px 30px 0px 0px;
+  display: none;
+}
+.frontend > span,
+.backend > span,
+.database > span {
+  margin: 20px 30px 0px 0px;
+  color: white;
+}
+.Skills {
+  margin-left: 10px;
+}
+
+.content {
+  min-height: 280px;
+}
+.card:hover{
+
+  box-shadow: 0px 0px 6px 1px rgb(255, 255, 255);
+  z-index: 1;
+}
+.card-body-content {
+  flex-direction: column;
+  gap: 29px;
+  display: none;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  position: relative;
+  min-height: 250px;
+  animation-duration: 1s;
+  
+
+}
+.card-body-content {
+  color: #202020;
+  z-index: 2;
+}
+
+.icons {
+  margin-top: 4px;
+  background: rgb(252,127,252);
+  background: linear-gradient(90deg, rgba(252,127,252,1) 57%, rgba(107,116,255,1) 91%, rgba(111,123,250,1) 100%);
+  display: flex;
+  justify-content: end;
+}
+.icons > h5,
+.icon > h5 {
+  font-weight: 100;
+  font-family: Bradley Hand, cursive;
+  margin: 17px 5px 0px 0px;
+}
+
+.icons > a,
+.icon > a {
+  cursor: pointer;
+  margin: 7px 10px 0px 0px;
+}
+.GoTODetails:hover{
+  box-shadow: inset 0px 0px 40px 1px rgb(255, 178, 54);
+  z-index: 1;
+}
+
+.crd-ho > div {
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  overflow: visible;
+}
+.crd-ho > div:hover {
+  /* background-color: #202020; */
+  /* background-color: rgb(217, 217, 217); */
+  transform: scale(1.05);
+  filter: drop-shodow(30px 10px 4px #333);
+  transition: all 0.3s ease-in;
+}
+
+.svg{
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  z-index: 0;
+  border-radius: 10px;
+}
+.svg:hover{
+  z-index: 2;
+  color: pink;
+  box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+}
+
+.svg1{
+  z-index: 0;
+  padding: 2px;
+  color: pink;
+  border-radius: 10px;
+}
+.svg1:hover{
+  z-index: 2;
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+}
+@keyframes sc {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cs {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+
+@keyframes load {
+  0% {
+    opacity: 0;
+    width: 5px;
+  }
+  100% {
+    opacity: 1;
+    width: 40px;
+  }
+}
+
+@media (max-width: 723px) and (min-width: 767px) {
+  .HeroSec {
+    display: block; /* Stack columns vertically */
+  }
+
+  .introduction {
+    left: 20px;
+  }
+  .HeroSecRight {
+    left: 1px;
+    display: block;
+    right: 0;
+    height: 140px;
+  }
+
+  .ConProfilePic {
+    left: 400px;
+    top: -140px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 566px) {
+  .HeroSec {
+    display: block; /* Stack columns vertically */
+  }
+
+  .introduction {
+    left: 20px;
+  }
+
+  .HeroSecRight {
+    left: 1px;
+    display: block;
+    right: 0;
+    height: 190px;
+  }
+
+  .ConProfilePic {
+    left: 230px;
+    top: -130px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 566px) and (min-width: 487px) {
+  .HeroSec {
+    display: block; /* Stack columns vertically */
+  }
+
+  .introduction {
+    left: 20px;
+  }
+
+  .HeroSecRight {
+    left: 1px;
+    display: block;
+    right: 0;
+    height: 190px;
+  }
+
+  .ConProfilePic {
+    left: 160px;
+    top: -130px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 487px) and (min-width: 422px) {
+  .HeroSec {
+    display: block; /* Stack columns vertically */
+  }
+
+  .introduction {
+    left: 20px;
+  }
+
+  .HeroSecRight {
+    left: 1px;
+    display: block;
+    right: 0;
+    height: 190px;
+  }
+
+  .ConProfilePic {
+    left: 100px;
+    top: -90px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 422px) and (min-width: 358px) {
+  .HeroSec {
+    display: block; /* Stack columns vertically */
+  }
+
+  .introduction {
+    left: 20px;
+  }
+
+  .HeroSecRight {
+    left: 1px;
+    display: block;
+    right: 0;
+    height: 50%;
+  }
+
+  .ConProfilePic {
+    left: 70px;
+    top: -10vw;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 358px) {
+  .HeroSec {
+    display: block; /* Stack columns vertically */
+  }
+
+  .introduction {
+    left: 20px;
+  }
+
+  .HeroSecRight {
+    left: 1px;
+    display: block;
+    right: 0;
+    height: 350px;
+  }
+
+  .ConProfilePic {
+    left: 20px;
+    top: -1vw;
+    margin: 0;
+    padding: 0;
+  }
+}
